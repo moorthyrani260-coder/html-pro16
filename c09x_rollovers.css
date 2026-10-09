@@ -1,132 +1,228 @@
-/* General styles */
-
+/* General page styles */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-    background-color: white;
+    background-color: #edf2f7;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 850px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+    max-width: 1000px;
+    width: 95%;
+    margin: 25px auto;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
 }
 
-a:focus,
-a:hover {
-    font-style: italic;
+a {
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Header */
+a:hover,
+a:focus {
+    color: #e76f51;
+    text-decoration: underline;
+}
 
+/* Header styles */
 header {
-    padding: 1.5em 0 2em 0;
-    border-bottom: 3px solid #931420;
-
-    background-image: linear-gradient(
-        30deg,
-        #f6bb73 0%,
-        #fffded 30%,
-        white 50%,
-        #fffded 80%,
-        #f6bb73 100%
-    );
-}
-
-header h2 {
-    font-size: 175%;
-    color: #800000;
-}
-
-header h3 {
-    font-size: 130%;
-    font-style: italic;
+    padding: 25px 20px;
+    min-height: 145px;
+    border-bottom: 4px solid #0077b6;
+    background: linear-gradient(120deg, #caf0f8, #ffffff, #ade8f4);
 }
 
 header img {
     float: left;
-    padding: 0 30px;
+    max-width: 140px;
+    height: auto;
+    padding: 0 25px 0 10px;
+}
+
+header h2 {
+    color: #023e8a;
+    font-size: 175%;
+    padding-top: 10px;
+}
+
+header h3 {
+    color: #0077b6;
+    font-size: 115%;
+    font-style: italic;
+    margin-top: 8px;
 }
 
 .shadow {
-    text-shadow: 2px 2px 2px #800000;
+    text-shadow: 2px 2px 3px #90e0ef;
 }
 
-/* Main */
-
+/* Main content */
 main {
-    clear: left;
+    clear: both;
+    padding: 20px;
 }
 
-/* Section */
-
+/* Main section */
 section {
-    width: 575px;
+    width: 68%;
     float: right;
-    padding: 0 20px 20px 20px;
+    padding: 0 10px 25px 20px;
 }
 
 section h1 {
-    color: #800000;
-    font-size: 150%;
-    padding: .5em 0 .25em;
-    margin: 0;
+    color: #023e8a;
+    font-size: 160%;
+    line-height: 1.4;
+    padding: 10px 0 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #90e0ef;
 }
 
 section p {
-    padding-bottom: .5em;
+    color: #334155;
+    line-height: 1.7;
+    padding-bottom: 12px;
 }
 
-/* Rollover
-   Students must complete this section.
-*/
-
+/* Image rollover effect */
 #image1 {
-    /* TODO */
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    margin: 20px auto;
+    background-image: url("../images/sampson_dinosaur.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #caf0f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(2, 62, 138, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #image1:hover {
-    /* TODO */
+    background-image: url("../images/sorkin_desk260.jpg");
+    transform: scale(1.03);
+    box-shadow: 0 7px 18px rgba(2, 62, 138, 0.25);
 }
 
-/* Aside */
-
+/* Sidebar styles */
 aside {
-    width: 215px;
-    float: right;
-    padding: 0 0 20px 20px;
+    width: 32%;
+    float: left;
+    padding: 0 15px 25px 5px;
 }
 
 aside h2 {
-    color: #800000;
-    font-size: 130%;
-    padding: .6em 0 .25em 0;
+    color: #023e8a;
+    font-size: 140%;
+    padding: 10px 0 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #90e0ef;
 }
 
 aside h3 {
+    color: #0077b6;
     font-size: 105%;
-    padding-bottom: .25em;
+    padding-bottom: 5px;
 }
 
 aside img {
-    padding-bottom: 1em;
+    display: block;
+    width: 75px;
+    height: auto;
+    margin: 8px 0 18px;
+    border: 2px solid #caf0f8;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-/* Footer */
+aside img:hover {
+    transform: scale(1.08);
+}
 
+/* Speaker links */
+.speaker {
+    padding: 10px;
+    margin-bottom: 12px;
+    background-color: #f0f9ff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+}
+
+.speaker a {
+    font-weight: bold;
+}
+
+aside > h3 a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #023e8a;
+}
+
+/* Footer styles */
 footer {
-    background-color: #931420;
     clear: both;
+    background-color: #023e8a;
+    border-top: 4px solid #00b4d8;
 }
 
 footer p {
+    color: #ffffff;
     text-align: center;
-    color: white;
-    padding: 1em 0;
+    padding: 18px 10px;
+    font-size: 90%;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+    body {
+        width: 96%;
+        margin: 10px auto;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+        padding: 0;
+    }
+
+    header h2 {
+        font-size: 145%;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section,
+    aside {
+        float: none;
+        width: 100%;
+        padding: 10px 0 20px;
+    }
+
+    #image1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    aside img {
+        width: 75px;
+    }
 }
