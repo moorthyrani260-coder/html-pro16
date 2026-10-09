@@ -1,70 +1,84 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>San Joaquin Valley Town Hall</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="c09x_rollovers.css">
+    <title>Town Hall - Image Rollover</title>
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/c09x_rollovers.css">
 </head>
 
 <body>
 
     <header>
-        <!-- Add the Town Hall logo -->
+        <img src="../images/town_hall_logo.gif"
+             alt="San Joaquin Valley Town Hall logo"
+             height="80">
 
-        <h2>San Joaquin Valley Town Hall</h2>
-
-        <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+        <div class="header-text">
+            <h2>San Joaquin Valley Town Hall</h2>
+            <h3>Celebrating 75 Years of Ideas</h3>
+        </div>
     </header>
 
     <main>
-
         <section>
-            <h1>An Image Rollover Using Background Images</h1>
+            <h1>Discover Our Image Rollover Gallery</h1>
 
-            <!-- Create the rollover element here -->
-            
+            <p>
+                Move your pointer over the featured image to explore
+                the image rollover effect created with CSS background images.
+            </p>
+
+            <p id="image1" title="Interactive image rollover"></p>
         </section>
 
         <aside>
-            <h2>Guest speakers</h2>
+            <h2>Meet Our Speakers</h2>
 
-            <h3>October<br>
+            <div class="speaker">
+                <h3>October</h3>
                 <a href="#">Jeffrey Toobin</a>
-            </h3>
+                <img src="../images/toobin75.jpg"
+                     alt="Guest speaker Jeffrey Toobin">
+            </div>
 
-            <!-- Add speaker image -->
-
-            <h3>November<br>
+            <div class="speaker">
+                <h3>November</h3>
                 <a href="#">Andrew Ross Sorkin</a>
-            </h3>
+                <img src="../images/sorkin75.jpg"
+                     alt="Guest speaker Andrew Ross Sorkin">
+            </div>
 
-            <!-- Add speaker image -->
-
-            <h3>January<br>
+            <div class="speaker">
+                <h3>January</h3>
                 <a href="#">Amy Chua</a>
-            </h3>
+                <img src="../images/chua75.jpg"
+                     alt="Guest speaker Amy Chua">
+            </div>
 
-            <!-- Add speaker image -->
-
-            <h3>February<br>
-                <a href="#">Scott Sampson</a>
-            </h3>
-
-            <!-- Add speaker image -->
+            <div class="speaker">
+                <h3>February</h3>
+                <a href="c09x_sampson.html">Scott Sampson</a>
+                <img src="../images/sampson75.jpg"
+                     alt="Guest speaker Scott Sampson">
+            </div>
 
             <h3>
-                <a href="#">Return to Home page</a>
+                <a href="../index.html">Back to Home Page</a>
             </h3>
         </aside>
-
     </main>
 
     <footer>
-        <p>&copy; 2016, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+        <p>
+            &copy; 2016 San Joaquin Valley Town Hall |
+            Fresno, California 93755
+        </p>
     </footer>
 
 </body>
